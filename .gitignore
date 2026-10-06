@@ -1,0 +1,31 @@
+# MCP / Browser Testing Artifacts
+.playwright-mcp/
+*.log
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sublime-workspace
+*.sublime-project
+
+# Node / Build artifacts (if extended later)
+node_modules/
+dist/
+build/
+.cache/
+
+# Python cache (if scripts/servers used locally)
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/

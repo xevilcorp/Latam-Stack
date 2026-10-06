@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LATAM STACK — Sistemas de Gestão Industrial & Comércio Exterior</title>
+  <meta name="description" content="Infraestrutura de software corporativo e ERP para a indústria latino-americana. Automação de comércio exterior, agentes de escaneamento tarifário HS, conformidade fiscal e chão de fábrica.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  
+  <!-- Typography: Inter & Plus Jakarta Sans via Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Institutional Bar -->
+  <aside class="inst-bar" aria-label="Aviso institucional">
+    <div class="inst-container inst-bar-content">
+      <div class="inst-bar-left">
+        <span class="inst-bullet"></span>
+        <span>SISTEMAS CORPORATIVOS &bull; INDÚSTRIA &amp; COMEX LATAM</span>
+      </div>
+      <div class="inst-bar-right">
+        <span>SÃO PAULO &bull; BRASIL</span>
+        <span class="inst-divider">|</span>
+        <span class="inst-status">OPERAÇÃO EM CONFORMIDADE SPED &amp; SISCOMEX</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="inst-container header-inner">
+      <a href="#hero" class="brand" aria-label="Latam Stack Início">
+        <img src="assets/logo.jpg" alt="Latam Stack" class="brand-logo" width="40" height="40">
+        <div class="brand-text">
+          <span class="brand-name">LATAM STACK</span>
+          <span class="brand-tag">ENTERPRISE SYSTEMS</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#manifesto" class="nav-link">Arquitetura</a></li>
+          <li><a href="#comex" class="nav-link">Comércio Exterior</a></li>
+          <li><a href="#erp" class="nav-link">ERP Industrial</a></li>
+          <li><a href="#financeiro" class="nav-link">Custos &amp; Compliance</a></li>
+          <li><a href="#especificacoes" class="nav-link">Especificações</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contato" class="btn btn-header">Contato Institucional</a>
+        <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false" id="mobileToggle">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-inner">
+      <ul class="drawer-links">
+        <li><a href="#manifesto" class="drawer-link">Arquitetura Geral</a></li>
+        <li><a href="#comex" class="drawer-link">Comércio Exterior &amp; HS</a></li>
+        <li><a href="#erp" class="drawer-link">ERP Industrial &amp; Fábrica</a></li>
+        <li><a href="#financeiro" class="drawer-link">Custos Landed &amp; Compliance</a></li>
+        <li><a href="#especificacoes" class="drawer-link">Especificações Técnicas</a></li>
+        <li><a href="#contato" class="drawer-link btn-drawer">Contato Institucional</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <p>São Paulo, Brasil &bull; América Latina</p>
+        <p class="drawer-sub">Atendimento a diretorias industriais</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION (Monumental & Solemn with Smooth Cinematic Transitions) -->
+    <section class="hero-section" id="hero" aria-label="Apresentação institucional">
+      <!-- Background Slides Carousel -->
+      <div class="hero-slides" id="heroSlides" aria-hidden="true">
+        <div class="hero-slide active" style="--bg-url: url('assets/hero-3.png');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="hero-slide" style="--bg-url: url('assets/hero-2.png');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="hero-slide" style="--bg-url: url('assets/hero-3.png');">
+          <div class="slide-overlay"></div>
+        </div>
+      </div>
+
+      <!-- Hero Main Content -->
+      <div class="inst-container hero-content-wrapper">
+        <div class="hero-content">
+          <p class="hero-eyebrow">INFRAESTRUTURA DE SOFTWARE CORPORATIVO</p>
+          <h1 class="hero-title">A espinha dorsal da indústria e do comércio exterior na América Latina.</h1>
+          <p class="hero-description">
+            Da prospecção algorítmica por códigos HS ao desembaraço aduaneiro, emissão fiscal e chão de fábrica. Uma arquitetura única desenvolvida para a complexidade regulatória brasileira.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contato" class="btn btn-primary">Agendar Reunião Executiva</a>
+            <a href="#manifesto" class="btn btn-ghost">Conhecer a Arquitetura &darr;</a>
+          </div>
+        </div>
+
+        <!-- Carousel Slide Controller & Ledger -->
+        <div class="hero-controls" aria-label="Controles do painel visual">
+          <div class="hero-slide-nav">
+            <button class="slide-indicator active" data-slide="0" aria-label="Slide 1: Logística Marítima e Comércio Exterior">
+              <span class="slide-num">01</span>
+              <span class="slide-info">
+                <span class="slide-label">Comércio Exterior</span>
+                <span class="slide-sub">Navegação &amp; Portos</span>
+              </span>
+              <span class="slide-progress"></span>
+            </button>
+            <button class="slide-indicator" data-slide="1" aria-label="Slide 2: Chão de Fábrica e Manufatura Contínua">
+              <span class="slide-num">02</span>
+              <span class="slide-info">
+                <span class="slide-label">ERP Industrial</span>
+                <span class="slide-sub">Precisão Fabril</span>
+              </span>
+              <span class="slide-progress"></span>
+            </button>
+            <button class="slide-indicator" data-slide="2" aria-label="Slide 3: Entrepostos Aduaneiros e Compliance">
+              <span class="slide-num">03</span>
+              <span class="slide-info">
+                <span class="slide-label">Infraestrutura</span>
+                <span class="slide-sub">Terminais &amp; Rastreio</span>
+              </span>
+              <span class="slide-progress"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL MANIFESTO (Solemnity & Architectural Focus) -->
+    <section class="manifesto-section" id="manifesto">
+      <div class="inst-container">
+        <div class="manifesto-header">
+          <span class="sec-index">01 / TESE ESTRUTURAL</span>
+          <h2 class="manifesto-lead">
+            A indústria brasileira não falha por falta de capacidade produtiva. Falha nos pontos cegos entre o porto, a alfândega e a contabilidade fabril.
+          </h2>
+          <p class="manifesto-body">
+            A América Latina abriga a matriz tributária e regulatória mais intrincada do planeta. A maioria das soluções de mercado é um mosaico frágil de módulos legados com integrações manuais. A Latam Stack unificou a ponta de inteligência internacional ao faturamento nacional em uma plataforma de alta fidelidade e tolerância zero a inconsistências.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar-item">
+            <span class="pillar-index">I</span>
+            <h3 class="pillar-title">Convergência Aduaneira Nativa</h3>
+            <p class="pillar-text">
+              O fluxo de materiais não começa no portão da fábrica. Ele é originado no despacho marítimo, na Declaração de Importação e na classificação tarifária precisa. O sistema orquestra cada etapa antes da atracação.
+            </p>
+          </article>
+
+          <article class="pillar-item">
+            <span class="pillar-index">II</span>
+            <h3 class="pillar-title">Precisão em Chão de Fábrica</h3>
+            <p class="pillar-text">
+              Ordens de fabricação sincronizadas a estoques alfandegados e armazéns gerais. Custo landed real incorporado diretamente na matéria-prima consumida na linha de montagem.
+            </p>
+          </article>
+
+          <article class="pillar-item">
+            <span class="pillar-index">III</span>
+            <h3 class="pillar-title">Conformidade e Auditoria Big-4</h3>
+            <p class="pillar-text">
+              Rastreabilidade total para auditorias independentes, SPED Fiscal, Bloco K e adequação estrutural antecipada para o novo regime de IVA Dual (CBS/IBS) da Reforma Tributária.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: COMÉRCIO EXTERIOR & AGENTES HS -->
+    <section class="editorial-section" id="comex">
+      <div class="inst-container">
+        <div class="editorial-split">
+          <div class="editorial-media">
+            <figure class="media-frame">
+              <img src="assets/comex.png" 
+                   alt="Terminal intermodal de cargas e contêineres para comércio exterior" 
+                   class="editorial-img">
+              <!--<figcaption class="media-caption">
+                Terminal Intermodal de Santos &bull; Monitoramento de Desembaraço e Trânsito Aduaneiro
+              </figcaption>-->
+            </figure>
+          </div>
+
+          <div class="editorial-content">
+            <span class="sec-index">02 / COMÉRCIO EXTERIOR</span>
+            <h2 class="editorial-heading">Da prospecção global ao desembaraço aduaneiro sem atrito.</h2>
+            <p class="editorial-lead">
+              Transformamos operações de importação e exportação de centros de custo burocráticos em vetores de margem líquida e expansão internacional.
+            </p>
+
+            <div class="feature-stack">
+              <div class="feature-item">
+                <h4 class="feature-title">Agentes Autônomos de Mercado &amp; Match HS</h4>
+                <p class="feature-desc">
+                  Sistemas que escaneiam registros alfandegários globais e balanças comerciais internacionais. Identificam assimetrias de demanda em mercados sul-americanos e globais, cruzando produtos fabricados com códigos do Sistema Harmonizado (HS/NCM) de compradores qualificados.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4 class="feature-title">Ciclo Documental Completo (BL, DI, DU-E)</h4>
+                <p class="feature-desc">
+                  Automação nativa de Bill of Lading (BL), Declarações de Importação (DI/DUIMP), Declaração Única de Exportação (DU-E), certificados de origem e packing lists. Eliminação de erros de digitação e mitigação severa de riscos de demurrage portuário.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4 class="feature-title">Parametrização Cambial &amp; Hedge Operacional</h4>
+                <p class="feature-desc">
+                  Gestão integrada de Adiantamento sobre Contrato de Câmbio (ACC), Adiantamento sobre Cambiais Entregues (ACE) e liquidação multimoeda sincronizada em tempo real com as contas de tesouraria do ERP.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: ERP INDUSTRIAL & MANUFATURA BRASILEIRA -->
+    <section class="editorial-section section-alt" id="erp">
+      <div class="inst-container">
+        <div class="editorial-split reverse">
+          <div class="editorial-content">
+            <span class="sec-index">03 / ERP INDUSTRIAL</span>
+            <h2 class="editorial-heading">Engenharia fabril, chão de fábrica e conformidade fiscal contínua.</h2>
+            <p class="editorial-lead">
+              Desenvolvido sob medida para a manufatura pesada, média e de transformação no Brasil. Estabilidade inabalável para plantas industriais contínuas.
+            </p>
+
+            <div class="feature-stack">
+              <div class="feature-item">
+                <h4 class="feature-title">Controle Fabril &amp; Engenharia de Produto (BOM)</h4>
+                <p class="feature-desc">
+                  Estrutura de materiais multinível com roteiros de produção detalhados, controle de lotes, ordens de serviço, apontamento direto em terminais industriais e rastreamento rigoroso de refugo e perdas.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4 class="feature-title">Estoque Multidepósito &amp; Recintos Alfandegados</h4>
+                <p class="feature-desc">
+                  Gestão unificada de estoques em trânsito internacional, centros logísticos industriais aduaneiros (CLIA), entrepostos e almoxarifados fabris. Validação em tempo real com controle de quarentena técnica.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4 class="feature-title">Motor Fiscal Nativo de Alta Performance</h4>
+                <p class="feature-desc">
+                  Emissão em milissegundos de NF-e, NFS-e, CT-e e MDF-e. Cálculo automático e auditado de ICMS, IPI, PIS, COFINS, ISS e substituição tributária. Arquitetura 100% pronta para a transição da Reforma Tributária (IBS/CBS).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="editorial-media">
+            <figure class="media-frame">
+              <img src="assets/erp.jpg" 
+                   alt="Engenheiro e operador industrial supervisionando linha automatizada" 
+                   class="editorial-img">
+              <!--<figcaption class="media-caption">
+                Planta Fabril Automatizada &bull; Apontamento em Tempo Real e Rastreabilidade de Lote
+              </figcaption>-->
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: GOVERNANÇA FINANCEIRA & CUSTOS LANDED -->
+    <section class="editorial-section" id="financeiro">
+      <div class="inst-container">
+        <div class="editorial-split">
+          <div class="editorial-media">
+            <figure class="media-frame">
+              <img src="assets/logistics.jpg" 
+                   alt="Centro de distribuição e infraestrutura logística integrada" 
+                   class="editorial-img">
+              <!--<figcaption class="media-caption">
+                Centro de Distribuição &bull; Apropriação Precisa de Custos Portuários e Frete Internacional
+              </figcaption>-->
+            </figure>
+          </div>
+
+          <div class="editorial-content">
+            <span class="sec-index">04 / TESOURARIA &amp; COMPLIANCE</span>
+            <h2 class="editorial-heading">Cálculo real de custo landed e controle de tesouraria irrestrito.</h2>
+            <p class="editorial-lead">
+              A clareza financeira que a diretoria executiva exige. Elimine suposições na margem de produtos importados ou exportados.
+            </p>
+
+            <div class="feature-stack">
+              <div class="feature-item">
+                <h4 class="feature-title">Custo Landed Real por Componente</h4>
+                <p class="feature-desc">
+                  Rateio automático e matemático de fretes marítimos, taxas aduaneiras (THC, demurrage, armazenagem), tributos de nacionalização e despesas portuárias diretamente no custo unitário de cada lote recebido no estoque.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4 class="feature-title">Contas a Pagar e Receber Multimoeda</h4>
+                <p class="feature-desc">
+                  Liquidacão estruturada com fornecedores estrangeiros e clientes locais. Conciliação bancária automatizada padrão Febraban/CNAB com histórico contábil imutável para auditorias fiscais.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4 class="feature-title">Demonstrativos Gerenciais em Tempo Real</h4>
+                <p class="feature-desc">
+                  DRE consolidada por centro de custo, linha de montagem e operação de comércio exterior. Visão cirúrgica de rentabilidade líquida por contrato e por NCM.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: MATRIZ DE ESPECIFICAÇÕES TÉCNICAS (Austere Architectural Data Sheet) -->
+    <section class="specs-section" id="especificacoes">
+      <div class="inst-container">
+        <div class="specs-header">
+          <span class="sec-index">05 / ESPECIFICAÇÕES TÉCNICAS</span>
+          <h2 class="specs-title">Matriz de Arquitetura Institucional</h2>
+          <p class="specs-lead">
+            Especificações de engenharia de software para diretores de tecnologia, CFOs e gestores de conformidade industrial.
+          </p>
+        </div>
+
+        <div class="specs-ledger">
+          <div class="ledger-row">
+            <div class="ledger-col-name">Motor de Prospecção &amp; Inteligência</div>
+            <div class="ledger-col-value">Varredura tarifária contínua WCO HS Code e NCM Mercosul com análise preditiva de balança comercial</div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-col-name">Módulos Aduaneiros Nativos</div>
+            <div class="ledger-col-value">Bill of Lading (BL), Declaração de Importação (DI / DUIMP), DU-E, LPCO, Packing List e Certificados de Origem</div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-col-name">Integrações Governamentais Oficiais</div>
+            <div class="ledger-col-value">Portal Único Siscomex, SEFAZ Nacional (27 unidades federativas), Receita Federal do Brasil, BACEN</div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-col-name">Conformidade e Obrigações Fiscais</div>
+            <div class="ledger-col-value">SPED Fiscal (ICMS/IPI), EFD-Contribuições, EFD-Reinf, Bloco K (controle de produção), Bloco H (inventário)</div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-col-name">Prontidão para Reforma Tributária</div>
+            <div class="ledger-col-value">Arquitetura de cálculo duplo nativa para o período de transição da Emenda Constitucional 132/2023 (CBS / IBS / IS)</div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-col-name">Modelagem Fabril &amp; Estoque</div>
+            <div class="ledger-col-value">Estruturas de materiais (BOM) multinível, estoques multidepósito, entrepostos aduaneiros (CLIA) e rastreabilidade total de lote</div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-col-name">Soberania &amp; Infraestrutura</div>
+            <div class="ledger-col-value">Hospedagem em data centers tier III em território brasileiro, baixa latência e conformidade rigorosa com a LGPD</div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-col-name">Criptografia &amp; Trilha de Auditoria</div>
+            <div class="ledger-col-value">AES-256 em repouso, TLS 1.3 em trânsito, logs imutáveis de transações com padrão de auditoria Big-4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: COMPARAÇÃO ESTRUTURAL (Discreet, Authoritative Contrast) -->
+    <section class="contrast-section">
+      <div class="inst-container">
+        <div class="contrast-card">
+          <div class="contrast-head">
+            <span class="sec-index">06 / DIFERENCIAÇÃO</span>
+            <h3 class="contrast-title">Por que as maiores operações migram para a Latam Stack</h3>
+          </div>
+          <div class="contrast-grid">
+            <div class="contrast-col legacy">
+              <span class="col-tag">Sistemas Legados &amp; ERPs Genéricos</span>
+              <ul class="col-list">
+                <li>Módulos de comércio exterior terceirizados ou remendados via planilhas paralelas</li>
+                <li>Dificuldade crônica de adaptação às constantes mudanças tributárias do Brasil</li>
+                <li>Falta de rastreabilidade de custo de importação na apropriação do chão de fábrica</li>
+                <li>Ausência total de inteligência de prospecção algorítmica de mercados internacionais</li>
+              </ul>
+            </div>
+            <div class="contrast-col sovereign">
+              <span class="col-tag">Arquitetura Latam Stack</span>
+              <ul class="col-list">
+                <li>Engenharia única unindo despacho aduaneiro, chão de fábrica e contabilidade fiscal</li>
+                <li>Motor fiscal brasileiro nativo atualizado continuamente sem custos adicionais de consultoria</li>
+                <li>Custo landed calculado centavo a centavo na entrada da matéria-prima no almoxarifado</li>
+                <li>Agentes integrados que mapeiam compradores externos a partir de códigos tarifários HS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07: CONTATO INSTITUCIONAL & ATENDIMENTO EXECUTIVO -->
+    <section class="contact-section" id="contato">
+      <div class="inst-container">
+        <div class="contact-split">
+          <div class="contact-info">
+            <span class="sec-index">07 / RELAÇÕES INSTITUCIONAIS</span>
+            <h2 class="contact-title">Atendimento Direto a Diretorias Industriais</h2>
+            <p class="contact-desc">
+              Não atuamos com equipes de vendas convencionais. Nossas discussões de alinhamento são conduzidas por engenheiros de software e especialistas em regulação fiscal e comércio exterior.
+            </p>
+
+            <div class="contact-meta">
+              <div class="meta-block">
+                <span class="meta-label">Escritório Corporativo</span>
+                <span class="meta-val">São Paulo, SP &bull; Brasil</span>
+                <span class="meta-sub">Atendimento a toda a América Latina</span>
+              </div>
+
+              <div class="meta-block">
+                <span class="meta-label">Canal Direto para Diretorias</span>
+                <a href="mailto:relacoes@latamstack.com" class="meta-link">relacoes@latamstack.com</a>
+              </div>
+
+              <div class="meta-block">
+                <span class="meta-label">Linha Executiva</span>
+                <span class="meta-val">+55 11 3090-8800</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <div class="form-header">
+              <h3 class="form-title">Solicitar Reunião de Arquitetura</h3>
+              <p class="form-sub">Apresentação confidencial e análise preliminar de aderência técnica.</p>
+            </div>
+
+            <form class="corporate-form" id="corporateForm" novalidate>
+              <div class="form-group">
+                <label for="execName" class="form-label">Nome do Executivo</label>
+                <input type="text" id="execName" name="nome" class="form-input" required placeholder="Ex: Roberto Silveira">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="execCargo" class="form-label">Cargo / Diretoria</label>
+                  <input type="text" id="execCargo" name="cargo" class="form-input" required placeholder="Ex: Diretor de Operações / CFO">
+                </div>
+                <div class="form-group">
+                  <label for="execEmpresa" class="form-label">Empresa Industrial</label>
+                  <input type="text" id="execEmpresa" name="empresa" class="form-input" required placeholder="Ex: Metalúrgica América S.A.">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="execEmail" class="form-label">E-mail Corporativo</label>
+                  <input type="email" id="execEmail" name="email" class="form-input" required placeholder="nome@empresa.com.br">
+                </div>
+                <div class="form-group">
+                  <label for="execOperacao" class="form-label">Foco Principal da Operação</label>
+                  <select id="execOperacao" name="operacao" class="form-select" required>
+                    <option value="" disabled selected>Selecione uma modalidade</option>
+                    <option value="industrial_comex">Manufatura &amp; Comércio Exterior (Import/Export)</option>
+                    <option value="industrial_puro">Manufatura Industrial Predominantemente Doméstica</option>
+                    <option value="trading_comex">Trading &amp; Operações Aduaneiras de Grande Porte</option>
+                    <option value="migracao_erp">Substituição de ERP Legado (SAP / Totvs / QAD / Outros)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="execMsg" class="form-label">Contexto da Operação (Opcional)</label>
+                <textarea id="execMsg" name="mensagem" class="form-textarea" rows="3" placeholder="Volume aproximado de notas fiscais, declarações aduaneiras ou desafios de conformidade atuais..."></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-submit">
+                  <span>Transmitir Solicitação Executiva</span>
+                </button>
+              </div>
+
+              <p class="form-disclaimer">
+                Seus dados serão tratados sob sigilo institucional absoluto e em estrita conformidade com a LGPD.
+              </p>
+            </form>
+
+            <div class="form-success-message" id="formSuccessMessage" aria-live="polite">
+              <div class="success-icon">&check;</div>
+              <h4 class="success-title">Solicitação Registrada</h4>
+              <p class="success-text">
+                Nossa equipe de relações corporativas entrará em contato com a sua diretoria em até 1 dia útil para encaminhar os materiais de arquitetura e agendar a sessão executiva.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SOLEMN INSTITUTIONAL FOOTER -->
+  <footer class="site-footer">
+    <div class="inst-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand">
+            <img src="assets/logo.jpg" alt="Latam Stack" class="brand-logo footer-logo" width="36" height="36">
+            <div class="brand-text">
+              <span class="brand-name">LATAM STACK</span>
+              <span class="brand-tag">SISTEMAS CORPORATIVOS S.A.</span>
+            </div>
+          </div>
+          <p class="footer-mission">
+            Engenharia de software e infraestrutura de dados para indústrias e operadores de comércio exterior na América Latina.
+          </p>
+        </div>
+
+        <div class="footer-nav-groups">
+          <div class="footer-col">
+            <span class="footer-col-title">Arquitetura</span>
+            <ul class="footer-links">
+              <li><a href="#comex">Agentes &amp; Match HS</a></li>
+              <li><a href="#comex">Despacho Aduaneiro &amp; BL</a></li>
+              <li><a href="#erp">Chão de Fábrica &amp; BOM</a></li>
+              <li><a href="#erp">Estoque Multidepósito</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-col-title">Conformidade</span>
+            <ul class="footer-links">
+              <li><a href="#erp">Motor Fiscal NF-e / SPED</a></li>
+              <li><a href="#especificacoes">Reforma Tributária (IVA Dual)</a></li>
+              <li><a href="#financeiro">Custo Landed &amp; Câmbio</a></li>
+              <li><a href="#especificacoes">Soberania de Dados &amp; LGPD</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-col-title">Institucional</span>
+            <ul class="footer-links">
+              <li><a href="#manifesto">Tese Estrutural</a></li>
+              <li><a href="#especificacoes">Matriz de Especificações</a></li>
+              <li><a href="#contato">Atendimento Executivo</a></li>
+              <li><a href="mailto:relacoes@latamstack.com">relacoes@latamstack.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <p>&copy; 2026 LATAM STACK TECNOLOGIA S.A. Todos os direitos reservados.</p>
+          <p class="footer-jurisdiction">São Paulo &bull; Brasil &bull; Registro Comercial e Soberania Tecnológica Nacional.</p>
+        </div>
+        <div class="footer-compliance-badges">
+          <span class="comp-badge">SPED / SISCOMEX</span>
+          <span class="comp-badge">LGPD CONFORME</span>
+          <span class="comp-badge">SOC2 / ISO 27001 AUDITÁVEL</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
